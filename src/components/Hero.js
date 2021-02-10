@@ -30,7 +30,7 @@ export function Hero () {
                   color: 'success',
                 },
               ].map(b => (
-                <Box px={3}>
+                <Box key={b.title} px={3}>
                   <Box bg="white" css={{ borderRadius: '5px', boxShadow: '0 6px 12px 0 rgba(1,46,122,0.11)', overflow: 'hidden' }} mw={275}>
                     <Box px={4} py={5} c="secondary">
                       <H4 mb={1} c="body">{b.title}</H4>
